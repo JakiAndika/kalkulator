@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkukator Kodingan</title>
+</head>
+<style>
+.calc {
+    width: 300px;
+    background: rgb(190, 28, 28);
+} 
+.nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+.close:hover{
+    background: rgb(43, 38, 38);
+}
+.minimize:hover{
+    background: rgb(43, 38, 38);
+}
+.maximize:hover{
+    background: rgb(43, 38, 38);
+}
+.menu:hover{
+    background: rgb(43, 38, 38);
+}
+.close, .minimize, .maximize, .menu {
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: black;
+    color: white;
+}
+.display{
+    background: white;
+    height: 50px;
+    margin:5px;
+}
+.input{
+    display: flex;
+    flex-direction:column;
+    background: #0F0;
+}
+.wrapper{
+    display: block;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.square:hover{
+    background: green;
+    color: white;
+    box-shadow: 2px 1px 4px black;
+}
+.square{
+    flex:1;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    background: rgb(201, 201, 201);
+}
+</style>
+<body>
+   <div class="calc">
+       <div class="nav">
+           <div class="close">x</div>
+           <div class="minimize">-</div>
+           <div class="maximize">o</div>
+           <div class="title">Basic Mode</div>
+           <div class="menu">M</div>
+       </div>
+       <div class="display"></div>
+       <div class="input">
+           <div class="wrapper">
+               <div class="row">
+                   <div class="square">7</div>
+                   <div class="square">8</div>
+                   <div class="square">9</div>
+                </div>
+                <div class="row">
+                    <div class="square">4</div>
+                    <div class="square">5</div>
+                    <div class="square">6</div>
+                </div>
+                <div class="row">
+                    <div class="square">1</div>
+                    <div class="square">2</div>
+                    <div class="square">3</div>
+                </div>
+                <div class="row">
+                    <div class="square">0</div>
+                    <div class="square">/</div>
+                    <div class="square">C</div>
+                </div>
+                <div class="row">
+                    <div class="square">+</div>
+                    <div class="square">-</div>
+                    <div class="square">X</div>
+                </div>
+                <div class="row">
+                    <div class="square">=</div>
+                </div>
+            </div>
+       </div>
+   </div>
+</body>
+</html>
